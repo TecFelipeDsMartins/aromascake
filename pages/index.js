@@ -53,10 +53,10 @@ const Content = styled.header`
 
 
 const Home = (props) => {
-  const {brincos} = props
-  const {colares} = props
-  const {correntes} = props
-  const {pulseiras} = props
+  const {bolos} = props
+  // const {colares} = props
+  // const {correntes} = props
+  // const {pulseiras} = props
   
   return (
       <Fragment>
@@ -79,16 +79,16 @@ const Home = (props) => {
           </Content>
           <MainView>
             <SectionMenu/>
-            <ProductSection name={"Brincos"} id="brincos">
-            {brincos.map((brinco)=>(
+            <ProductSection name={"Bolos"} id="bolos">
+            {bolos.map((bolo)=>(
             <Product 
-              img={brinco.data.imagem.url}
-              nome={brinco.data.name}
-              preco={brinco.data.preco}
-              link={brinco.data.name}/>)
+              img={bolo.data.imagem.url}
+              nome={bolo.data.nome}
+              preco={bolo.data.preco}
+              link={bolo.data.name}/>)
             )}
             </ProductSection>
-            <ProductSection name={"Colares"} id="colares">
+            {/* <ProductSection name={"Colares"} id="colares">
             {colares.map((colar)=>(
             <Product 
               img={colar.data.imagem.url}
@@ -114,7 +114,7 @@ const Home = (props) => {
               preco={corrente.data.preco}
               link={corrente.data.name}/>)
             )}
-            </ProductSection>
+            </ProductSection> */}
           </MainView> 
           <About id="about" /> 
         <FooterView/>
@@ -126,17 +126,17 @@ const Home = (props) => {
 };
 
 export async function getServerSideProps({ res }){
-  const client = Prismic.client('')
-  const brinco = await client.query(Prismic.Predicates.at('document.type', ''))
-  const corrente = await client.query(Prismic.Predicates.at('document.type', ''))
-  const colar = await client.query(Prismic.Predicates.at('document.type', ''))
-  const pulseira = await client.query(Prismic.Predicates.at('document.type', ''))
+  const client = Prismic.client('https://aromascake.cdn.prismic.io/api/v2')
+  const bolos = await client.query(Prismic.Predicates.at('document.type', 'bolos'))
+  // const corrente = await client.query(Prismic.Predicates.at('document.type', ''))
+  // const colar = await client.query(Prismic.Predicates.at('document.type', ''))
+  // const pulseira = await client.query(Prismic.Predicates.at('document.type', ''))
   return {
     props:{
-      bri: bri.results,
-      corr: corr.results,
-      col: col.results,
-      pul: pul.results
+      bolos: bolos.results,
+      // corr: corr.results,
+      // col: col.results,
+      // pul: pul.results
     },
   }
 }

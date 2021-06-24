@@ -13,7 +13,7 @@ const Navbar = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #F1D992;
+    background-color: #F7ACB0;
     height: 10%;
     transition: ease 0.25s all; 
     
@@ -31,7 +31,7 @@ const Navbar = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #F1D992;
+    background-color: #F7ACB0;
     height: 10%;
     transition: ease 0.25s all; 
     ${props => props.hei && css`
@@ -69,7 +69,7 @@ const Navbar = styled.nav`
         `}
     
     .li{
-        color: #010042;
+        color: #fff;
         font-size:1.2rem;
         padding-left: 20px;
         cursor: pointer;
@@ -92,7 +92,7 @@ const Navbar = styled.nav`
         `}
     
         .li{
-            color: #F1D992;
+            color: #F7ACB0;
             font-size:1rem;
             padding: 7px;
 
@@ -133,7 +133,7 @@ const NavBarView = () => {
     let [hei, setHei] = useState(false);
         return (
                 <Navbar hei={hei}   className="nav-container" >
-                    <img src="/img/Logo.jpg" />
+                    <img src="/img/logo.png" />
                     <ul>
                         <Link className="li"
                         activeClass="active"
@@ -150,31 +150,7 @@ const NavBarView = () => {
                         smooth={true}
                         offset={-30}
                         duration={500}
-                        >Brincos</Link>
-                        <Link className="li"
-                        activeClass="active"
-                        to="colares"
-                        spy={true}
-                        smooth={true}
-                        offset={-30}
-                        duration={500}
-                        >Colares</Link>
-                        <Link className="li"
-                        activeClass="active"
-                        to="pulseiras"
-                        spy={true}
-                        smooth={true}
-                        offset={-30}
-                        duration={500}
-                        >Pulseiras</Link>
-                        <Link className="li"
-                        activeClass="active"
-                        to="correntes"
-                        spy={true}
-                        smooth={true}
-                        offset={-30}
-                        duration={500}
-                        >Correntes</Link>
+                        >Produtos</Link>
                         <Link className="li"
                         activeClass="active"
                         to="contato"

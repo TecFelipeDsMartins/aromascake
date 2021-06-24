@@ -2,16 +2,17 @@ import styled from "styled-components";
 
 
 const AsideImg = styled.aside`
-
+ 
 grid-area: aside-img;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image:url('/img/pulseirasVarios.jpeg');
+    background-image:url('/img/background.png');
     background-size: cover;
     background-position: center;
-    border-bottom-left-radius: 50%;
+    border-bottom-left-radius: 30%;
+    border-top-left-radius: 30%;
 
 `
 

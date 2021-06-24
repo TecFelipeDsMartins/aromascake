@@ -27,9 +27,10 @@ const AsideText = styled.aside`
 
   p {
     text-align: center;
-    color: #010042;
+    color: #5D2411;
     font-family: 'Sulphur Point', sans-serif;
     margin-top:0px;
+    font-size: 1.2rem;
     
   }
 
@@ -39,8 +40,8 @@ const HeaderViewText = (props) => {
     return (
         <AsideText>
              <div className="text-container">
-                <h1>Bijuterias</h1>
-                <p>para seus melhores momentos.</p>
+                <img src="img/logoAromas2.png"/>
+                <p>O aromas dos melhores momentos</p>
              </div> 
         </AsideText>
     )
