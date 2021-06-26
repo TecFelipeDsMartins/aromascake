@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 
 const AsideImg = styled.aside`
- 
+ /* border-top: 20px solid #AC893C; */
+ border-bottom: 30px solid #AC893C;
+ border-left: 20px solid #AC893C;
+ /* box-shadow: -10px 0px 20px  lightgray; */
+
 grid-area: aside-img;
 
     display: flex;
@@ -11,8 +15,8 @@ grid-area: aside-img;
     background-image:url('/img/background.png');
     background-size: cover;
     background-position: center;
-    border-bottom-left-radius: 30%;
-    border-top-left-radius: 30%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
 
 `
 

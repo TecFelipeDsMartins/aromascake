@@ -14,6 +14,12 @@ import { Fragment } from "react";
 
 
 const Content = styled.header`
+  background-image: url('./img/Frame 1.png');
+  background-color: rgba(200, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  
+
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(10, 1fr);
@@ -23,15 +29,15 @@ const Content = styled.header`
 
   grid-template-areas:
     "nav nav nav nav nav nav"
-    "aside-text aside-text    aside-img aside-img aside-img aside-img"
-    "aside-text aside-text    aside-img aside-img aside-img aside-img"
-    "aside-text aside-text    aside-img aside-img aside-img aside-img"
-    "aside-text aside-text    aside-img aside-img aside-img aside-img"
-    "aside-text aside-text    aside-img aside-img aside-img aside-img"
-    "aside-text aside-text    aside-img aside-img aside-img aside-img"
-    "aside-text aside-text    aside-img aside-img aside-img aside-img"
-    "aside-text aside-text    aside-img aside-img aside-img aside-img"
-    "aside-text aside-text    aside-img aside-img aside-img aside-img";
+    "aside-text aside-text  aside-text  aside-img aside-img aside-img"
+    "aside-text aside-text  aside-text  aside-img aside-img aside-img"
+    "aside-text aside-text  aside-text  aside-img aside-img aside-img"
+    "aside-text aside-text  aside-text  aside-img aside-img aside-img"
+    "aside-text aside-text  aside-text  aside-img aside-img aside-img"
+    "aside-text aside-text  aside-text  aside-img aside-img aside-img"
+    "aside-text aside-text  aside-text  aside-img aside-img aside-img"
+    "aside-text aside-text  aside-text  aside-img aside-img aside-img"
+    "aside-text aside-text  aside-text  aside-img aside-img aside-img";
 
   @media only screen and (max-width: 790px) {
     
@@ -69,7 +75,7 @@ const Home = (props) => {
           <link rel="preconnect" href="https://fonts.gstatic.com"/>
           <link rel="preconnect" href="https://fonts.gstatic.com"/>
           <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Sulphur+Point&display=swap" rel="stylesheet"/>
-          <title>-- Marion Arteira --</title>
+          <title>Aromas Cake - Confeitaria</title>
         </Head>
         <Fragment>
           <Content>  
