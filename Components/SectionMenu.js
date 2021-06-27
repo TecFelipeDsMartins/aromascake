@@ -16,17 +16,18 @@ const Section = styled.section`
    padding:15px;
    
    h2{
-       font-size: 1.7rem;
+       font-size: 2rem;
        display:flex;
        align-items:center;
        justify-content: center;
        color: #010042;
-       border: 2px solid #F1D992;
+       /* border: 2px solid #F1D992; */
        border-top-right-radius: 10px;
        border-top-left-radius: 10px;
        width: 100%;
        margin: 0px;
-       font-family: 'Dancing Script', cursive;
+       font-family: 'Playball', cursive;
+       font-weight: 200;
        grid-row: 2 / 4;
        grid-column: 1;
    }
@@ -89,7 +90,7 @@ const Section = styled.section`
 const SectionMenu = (props) => {
     return (
         <Section id="SectionMenu">
-            <h2>Categorias de Produtos</h2>
+            <h2>Produtos</h2>
             <div className="container-menu">
             
                     <Link 

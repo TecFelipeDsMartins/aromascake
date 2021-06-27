@@ -36,7 +36,7 @@ const Navbar = styled.nav`
     transition: ease 0.25s all; 
     ${props => props.hei && css`
        height:50vh;
-       background-color: rgba(1, 0, 66, 0.9);
+       background-color: rgba(200, 100, 100, 0.8);
        
        
     `}
@@ -71,6 +71,7 @@ const Navbar = styled.nav`
     .li{
         color: #fff;
         font-size:1.2rem;
+        font-family: sans-serif;
         padding-left: 20px;
         cursor: pointer;
         }
@@ -92,7 +93,7 @@ const Navbar = styled.nav`
         `}
     
         .li{
-            color: #F7ACB0;
+            color: #fff;
             font-size:1rem;
             padding: 7px;
 
@@ -107,7 +108,7 @@ const Hamburger = styled(GiHamburgerMenu)`
    @media only screen and (max-width: 790px) {
    display: inline-block;
    font-size: 1.3rem;
-   color: #010042;
+   color: #fff;
    transition: ease 0.6s all;
    margin-right: 20px;
    

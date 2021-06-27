@@ -17,12 +17,22 @@ const AsideText = styled.aside`
     
     }
  
- h1{
+ /* h1{
     font-family: 'Dancing Script', cursive;
     color: #010042;
     text-align: center;
     font-size: clamp(3rem, 5.5vw, 4.5rem);
     margin-bottom: 10px;
+  } */
+   
+  img{
+    width: 350px;
+  }
+
+  @media only screen and (max-width: 790px) {
+    img{
+      width: 230px;
+    }
   }
 
   p {

@@ -73,8 +73,9 @@ const Home = (props) => {
           <meta name="description" content="Site para vendas de bijuterias"/>
           <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
           <link rel="preconnect" href="https://fonts.gstatic.com"/>
-          <link rel="preconnect" href="https://fonts.gstatic.com"/>
           <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Sulphur+Point&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet"></link>
           <title>Aromas Cake - Confeitaria</title>
         </Head>
         <Fragment>
