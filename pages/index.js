@@ -135,15 +135,9 @@ const Home = (props) => {
 export async function getServerSideProps({ res }){
   const client = Prismic.client('https://aromascake.cdn.prismic.io/api/v2')
   const bolos = await client.query(Prismic.Predicates.at('document.type', 'bolos'))
-  // const corrente = await client.query(Prismic.Predicates.at('document.type', ''))
-  // const colar = await client.query(Prismic.Predicates.at('document.type', ''))
-  // const pulseira = await client.query(Prismic.Predicates.at('document.type', ''))
   return {
     props:{
       bolos: bolos.results,
-      // corr: corr.results,
-      // col: col.results,
-      // pul: pul.results
     },
   }
 }

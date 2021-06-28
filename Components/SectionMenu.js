@@ -15,17 +15,19 @@ const Section = styled.section`
    width: 100%;
    padding:15px;
    
+   
    h2{
        font-size: 2rem;
        display:flex;
        align-items:center;
        justify-content: center;
-       color: #010042;
+       color: #5D2411;
        /* border: 2px solid #F1D992; */
        border-top-right-radius: 10px;
        border-top-left-radius: 10px;
        width: 100%;
        margin: 0px;
+       margin-bottom: 30px;
        font-family: 'Playball', cursive;
        font-weight: 200;
        grid-row: 2 / 4;
@@ -68,12 +70,13 @@ const Section = styled.section`
         .link-cat{
             display: inline-block;
             width: 100%;
-            background-color: #F1D992; 
             text-decoration: none;
             text-align: center;
-            color: #010042;
+            color: #5D2411;
             font-family: 'Sulphur Point', sans-serif;
             font-size: 1.2rem;
+            padding-left: 15px;
+            padding-right: 15px;
             
         }
         @media only screen and (max-width: 790px) {
@@ -82,6 +85,9 @@ const Section = styled.section`
         grid-template-columns: repeat(2, minmax(130px, auto));
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 5px;
+        box-shadow: 0px 2px 5px 0px grey;
+        padding: 10px;
+        border-radius: 10px;
         }
     }
     
@@ -100,8 +106,8 @@ const SectionMenu = (props) => {
                         spy={true}
                         smooth={true}
                         offset={-30}
-                        duration={500}><div className="link-cat">Brincos</div></Link>
-                    
+                        duration={500}><div className="link-cat">Bolos Caseirinhos</div>
+                    </Link>
                     <Link 
                         id="cat-2"
                         activeClass="active"
@@ -110,7 +116,7 @@ const SectionMenu = (props) => {
                         smooth={true}
                         offset={-30}
                         duration={500}
-                        ><div className="link-cat">Colares</div>
+                        ><div className="link-cat">Bolos em camadas</div>
                     </Link>
                     <Link
                         id="cat-3"
@@ -120,9 +126,7 @@ const SectionMenu = (props) => {
                         smooth={true}
                         offset={-30}
                         duration={500}>
-                        
-                        <div className="link-cat">Pulseiras</div>
-                        
+                        <div className="link-cat">Doces</div>
                     </Link>
                     <Link 
                         id="cat-4"
@@ -132,8 +136,9 @@ const SectionMenu = (props) => {
                         smooth={true}
                         offset={-30}
                         duration={500}
-                        ><a className="link-cat">Correntes</a>
+                        ><a className="link-cat">Salgados</a>
                     </Link>
+                    
                     
                 </div>
         </Section>

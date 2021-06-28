@@ -22,7 +22,7 @@ h2{
     border-bottom : 1px solid #F1D992;
     width: 85vw;
     font-family: 'Dancing Script', cursive;
-    color: #010042;
+    color: #5D2411;
     background-color:#fff;
     position: sticky;
     top: 10%;
