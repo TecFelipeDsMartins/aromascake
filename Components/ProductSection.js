@@ -18,10 +18,10 @@ h2{
     text-align: center;
     padding-top :10px;
     padding-bottom :10px;
-    border-top : 1px solid #F1D992;
-    border-bottom : 1px solid #F1D992;
+    border-bottom : 1px solid #5D2411;
     width: 85vw;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Playball', cursive;
+    font-weight: 100;
     color: #5D2411;
     background-color:#fff;
     position: sticky;

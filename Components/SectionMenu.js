@@ -43,27 +43,27 @@ const Section = styled.section`
         justify-content: center;
        
         #cat-1{
-            background-image: url('/img/_MG_5733.jpg');
-            background-size: cover;
+            background-image: url('/img/caseirinhos.png');
+            background-size: 190px;
             background-position: center;
 
         }
 
         #cat-2{
-            background-image: url('/img/_MG_5671.jpg');
-            background-size: cover;
+            background-image: url('/img/emCamadas.png');
+            background-size: 190px;
             background-position: center;
         }
 
         #cat-3{
-            background-image: url('/img/_MG_5651.jpg');
-            background-size: cover;
+            background-image: url('/img/doces.png');
+            background-size: 190px;
             background-position: center;
         }
 
         #cat-4{
-            background-image: url('/img/_MG_5712.jpg');
-            background-size: cover;
+            background-image: url('/img/salgados.png');
+            background-size: 190px;
             background-position: center;
         }
 
@@ -73,6 +73,7 @@ const Section = styled.section`
             text-decoration: none;
             text-align: center;
             color: #5D2411;
+            background-color: rgba(255, 255, 255, 0.7);
             font-family: 'Sulphur Point', sans-serif;
             font-size: 1.2rem;
             padding-left: 15px;
@@ -102,7 +103,7 @@ const SectionMenu = (props) => {
                     <Link 
                         id="cat-1"
                         activeClass="active"
-                        to="brincos"
+                        to="bolos"
                         spy={true}
                         smooth={true}
                         offset={-30}

@@ -24,7 +24,6 @@ const MainView = (props) => {
     return (
         <Main>
             {props.children}
-            <button className="btn-artesanato">Confira também as peças de artesanato</button>
         </Main>
     )
 }

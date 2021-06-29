@@ -134,7 +134,8 @@ const NavBarView = () => {
     let [hei, setHei] = useState(false);
         return (
                 <Navbar hei={hei}   className="nav-container" >
-                    <img src="/img/logo.png" />
+                    
+                    <img src="/img/logo.png"/>
                     <ul>
                         <Link className="li"
                         activeClass="active"
@@ -143,10 +144,10 @@ const NavBarView = () => {
                         smooth={true}
                         offset={-30}
                         duration={500}
-                        >Sobre mim</Link>
+                        >Propósito</Link>
                         <Link className="li"
                         activeClass="active"
-                        to="brincos"
+                        to="SectionMenu"
                         spy={true}
                         smooth={true}
                         offset={-30}

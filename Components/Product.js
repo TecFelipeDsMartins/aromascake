@@ -1,6 +1,7 @@
 import React from "react";
 import styled, {css} from 'styled-components';
 import {useState} from 'react'
+import { FaWhatsapp } from "react-icons/fa";
 
 const ProductCard = styled.div`
   align-self:center;
@@ -13,9 +14,10 @@ const ProductCard = styled.div`
   justify-content: space-between;
   height: max(400px, auto);
   width: 250px;
-  background-color: #FFFFBD;
+  background-color: #fff;
   box-shadow: 1px 3px 7px #aaa;
   margin: 30px;
+
 
 
   img {
@@ -28,10 +30,13 @@ const ProductCard = styled.div`
     }
 
   button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80%;
     height: 30px;
     border-radius: 5px;
-    background-color: #DCC47D;
+    background-color: #C7FFAD;
     text-decoration: none;
     border: none;
     color: white;
@@ -45,7 +50,7 @@ const ProductCard = styled.div`
     flex-grow:0;
     margin: 0px;
     padding: 5px;
-    color: #010042;
+    color: #5D2411;
     font-weight: 400;
     font-size: 1rem;
     font-family: 'Sulphur Point', sans-serif;
@@ -53,16 +58,16 @@ const ProductCard = styled.div`
   }
 
   p{
-    color: #010042;
+    color: #5D2411;
     font-family: 'Sulphur Point', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin:0px;
   }
 
   a {
-    
+    margin-left: 5px;
     text-decoration: none;
-    color: #fff;
+    color: green;
   }
   
 `;
@@ -72,15 +77,16 @@ const Product = (props) => {
 
   let productName = props.link;
   let linkWhats =
-    "https://api.whatsapp.com/send?phone=5551982175567&text=Ol%C3%A1.%20Visitei%20seu%20site%20e%20queria%20encomendar%20";
-  let linkWithNameProduct = linkWhats + productName + "%20";
+    "https://api.whatsapp.com/send?phone=5551982729582&text=Ol%C3%A1.%20Visitei%20seu%20site%20e%20queria%20encomendar%20um%20";
+  let linkWithNameProduct = linkWhats + productName + ".%20";
   return (
         <ProductCard >
           <img src={props.img} alt={props.nome}/>
           <h3>{props.nome}</h3>
           <p>R${props.preco}</p>
           <button>
-            <a href={linkWithNameProduct} target="_blank">Encomendar</a>
+            <FaWhatsapp style={{color:"green"}}/>
+            <a href={linkWithNameProduct} target="_blank">Encomendar agora</a>
           </button>
         </ProductCard>
   );

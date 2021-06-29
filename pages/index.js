@@ -69,8 +69,11 @@ const Home = (props) => {
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="theme-color" content="#F1D992" />
-          <meta name="description" content="Site para vendas de bijuterias"/>
+          <meta name="theme-color" content="#F7ACB0" />
+          <meta name="description" content="Aromas Cake - Confeitaria Artesanal Afetiva. Bolos caseirinhos, Bolos em Camadas, Brigadeiros gourmet, Bolos de Aniversário, Bolos de casamento,
+          kits, coffee Break, Donuts, Lembrancinhas, Bolos simples, Pão caseiro, Pão integral, Pão de queijo mineiro, Pão de queijo com goiabada, Bolos personalizados, Bolos decorados, Sonhos com creme de confeiteiro, Churros, Bombas de chocolate,
+          Mini bolos, Bolo vulcão, Bolo de pote, Bolo em Fatia, Marta rocha, Panetone, Doce de leite artesanal, Requeijão Artesanal, Iogurte artesanal, Geléia artesanal, Salgados, Risólis, Bolo de milho, Bolo de Chocolate, Bolo de cenoura com cobertura de chocolate, 
+          Torta de sorvete, Bolo Prestígio, Bolo em fatias, Brownie, Bolo toalha feupuda de coco, Receitas, dicas"/>
           <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
           <link rel="preconnect" href="https://fonts.gstatic.com"/>
           <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Sulphur+Point&display=swap" rel="stylesheet"/>
@@ -86,13 +89,13 @@ const Home = (props) => {
           </Content>
           <MainView>
             <SectionMenu/>
-            <ProductSection name={"Bolos"} id="bolos">
+            <ProductSection name={"Bolos Caseirinhos"} id="bolos">
             {bolos.map((bolo)=>(
             <Product 
               img={bolo.data.imagem.url}
               nome={bolo.data.nome}
               preco={bolo.data.preco}
-              link={bolo.data.name}/>)
+              link={bolo.data.nome}/>)
             )}
             </ProductSection>
             {/* <ProductSection name={"Colares"} id="colares">
