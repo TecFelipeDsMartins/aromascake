@@ -12,7 +12,7 @@ const Navbar = styled.nav`
     z-index: 2;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     background-color: #F7ACB0;
     height: 10%;
     transition: ease 0.25s all; 
@@ -30,13 +30,13 @@ const Navbar = styled.nav`
     z-index: 2;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     background-color: #F7ACB0;
     height: 10%;
     transition: ease 0.25s all; 
     ${props => props.hei && css`
        height:50vh;
-       background-color: rgba(200, 100, 100, 0.8);
+       background-color: rgba(200, 100, 100, 0.97);
        
        
     `}
@@ -88,6 +88,9 @@ const Navbar = styled.nav`
         align-items: center;
         justify-content: center;
         line-height: 1.5rem;
+
+        
+
         ${props => props.hei && css`
          display: flex;
         `}
@@ -133,9 +136,14 @@ const NavBarView = () => {
    
     let [hei, setHei] = useState(false);
         return (
-                <Navbar hei={hei}   className="nav-container" >
+                
+                <Navbar hei={hei}   
+                  className="nav-container" >
+
                     
-                    <img src="/img/logo.png"/>
+                    {/* <img src="/img/logo.png"/> */}
+                    
+                    
                     <ul>
                         <Link className="li"
                         activeClass="active"
@@ -163,6 +171,8 @@ const NavBarView = () => {
                         >Contato</Link> 
                     </ul>
                     <Hamburger  className="menu-hamburger" hei={hei} onClick={()=>setHei(!hei)}></Hamburger>
+                    
+                   
                 </Navbar>
         )
 }
