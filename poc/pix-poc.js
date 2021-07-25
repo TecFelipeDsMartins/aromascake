@@ -1,4 +1,4 @@
-require('dotenv').config({path:'../.env.homologacao'})
+require('dotenv').config({path:'../.env.producao'})
 console.log(process.env.GN_ENV)
 
 const https = require ('https')
@@ -69,7 +69,31 @@ const createCharge = async(accessToken, chargeData) =>{
 }
 
 
+const getLoc = async(accessToken, LocId) =>{
+    const certificado = fs.readFileSync('../'+ process.env.GN_CERTIFICADO)
+    
+    const agent = new https.Agent({
+        pfx: certificado,
+        passphrase: ''
+    })
+
+    const config ={
+        method: 'GET',
+        url: baseUrl + '/v2/loc/'+LocId+'/qrcode',
+        headers: {
+            Authorization: 'Bearer ' + accessToken,
+            'Content-type': 'application/json'
+        },
+        httpsAgent: agent,
+        
+    }
+    const result = await axios(config)
+    return result.data
+}
+
+
 const run = async()=>{
+    const chave = process.env.CHAVE_PIX
     const token = await getToken()
     const accessToken = token.access_token
 
@@ -84,12 +108,13 @@ const run = async()=>{
         valor:{
            original: '130.50'
         },
-        chave: '36303582000122',
+        chave,
         solicitacaoPagador: 'Cobrança dos serviços aromas'
     }
 
     const cobranca = await createCharge(accessToken, cob)
-    console.log(cobranca)
+    const qrcode = await getLoc(accessToken, cobranca.loc.id)
+    console.log(qrcode)
     
     
 }
