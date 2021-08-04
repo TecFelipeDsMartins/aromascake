@@ -1,5 +1,6 @@
+import { useContext } from "react";
 import styled from "styled-components";
-
+import { CartContext } from "./CartContext";
 
 const AsideImg = styled.aside`
  /* border-top: 20px solid #AC893C; */
@@ -21,9 +22,11 @@ grid-area: aside-img;
 `
 
 const HeaderViewImg = () => {
-    return (
-       <AsideImg className="img-container"></AsideImg>
     
+    return (
+       
+       <AsideImg className="img-container"></AsideImg>
+       
     )
 }
 

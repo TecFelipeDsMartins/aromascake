@@ -11,6 +11,8 @@ import ProductSection from "../Components/ProductSection";
 import About from "../Components/About";
 import Prismic from 'prismic-javascript'
 import { Fragment } from "react";
+import { useCart } from "../Components/CartContext";
+
 
 
 const Content = styled.header`
@@ -64,8 +66,10 @@ const Home = (props) => {
   // const {correntes} = props
   // const {pulseiras} = props
   
+  const cart = useCart()
+  
   return (
-      <Fragment>
+    <Fragment>
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -85,6 +89,7 @@ const Home = (props) => {
           <Content>  
             <NavBarView className="nav"/>
             <HeaderViewText className="aside-text"/>
+             
             <HeaderViewImg className="aside-img"/>
           </Content>
           <MainView>
