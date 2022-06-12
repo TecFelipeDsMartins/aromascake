@@ -112,15 +112,8 @@ const Home = (props) => {
               link={colar.data.name}/>)
             )}
             </ProductSection>
-            <ProductSection name={"Pulseiras"} id="pulseiras">
+            <ProductSection 2name={"Pulseiras"} id="pulseiras">
             {pulseiras.map((pulseira)=>(
-            <Product 
-              img={pulseira.data.imagem.url}
-              nome={pulseira.data.name}
-              preco={pulseira.data.preco}
-              link={pulseira.data.name}/>)
-            )}
-            </ProductSection>
             <ProductSection name={"Correntes"} id="correntes">
             {correntes.map((corrente)=>(
             <Product 
